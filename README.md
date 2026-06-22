@@ -17,9 +17,12 @@ Here are some ideas to get you started:
 
 ## My Private Projects
 - [neyobytes-whatsapp-agent](https://github.com/hazrid93/neyobytes-whatsapp-agent)
+
 A WhatsApp Bot SaaS platform that allows users to create AI-powered WhatsApp bots for business inquiries, customer support, and group management. Comes with smart context management and compression keeping long conversation history optimized for LLM retrieval.
 
+
 - [neyobytes-jemput](https://github.com/hazrid93/neyobytes-jemput)
+  
 Jemput is a digital wedding invitation platform built for the Malaysian market. Couples can create beautiful, themed digital wedding cards (kad kahwin) complete with RSVP management, guest book, photo gallery, money gift (Salam Kaut) integration, countdown timer, Google Maps location, background music, and an AI-powered chatbot that answers guest questions about the event
   
   
