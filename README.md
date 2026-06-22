@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hi there 👋 Im Azad
 
 <!--
 **hazrid93/hazrid93** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,5 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-## Open Source Contributions
+## 👨🏻‍🔧 Open Source Contributions
 - [fix: strip tool_calls from assistant messages for GLM models to prevent ZAI/vLLM 400 crash](https://github.com/monotykamary/pi-makora-provider/pull/4)
+- [Barcode scanner enhancement via retry with inset and zoom](https://github.com/gevgasparyan/rn-qr-generator/pull/57)
+- [add base64 image support under linkMetadata for IOS for custom sharing icon](https://github.com/react-native-share/react-native-share/pull/1599)
+- [add @ file autocomplete suggestions](https://github.com/synthetic-lab/octofriend/pull/113)
