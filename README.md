@@ -19,3 +19,8 @@ Here are some ideas to get you started:
 - [Barcode scanner enhancement via retry with inset and zoom](https://github.com/gevgasparyan/rn-qr-generator/pull/57)
 - [add base64 image support under linkMetadata for IOS for custom sharing icon](https://github.com/react-native-share/react-native-share/pull/1599)
 - [add @ file autocomplete suggestions](https://github.com/synthetic-lab/octofriend/pull/113)
+
+
+## Connect With Me
+- Email: hazrid1993@gmail.com
+- Linkedin: [link](https://www.linkedin.com/in/hazrid-azad-bin-shaharudin-35797aa6?utm_source=share_via&utm_content=profile&utm_medium=member_ios)
