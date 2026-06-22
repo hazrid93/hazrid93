@@ -14,6 +14,20 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+## My Private Projects
+- [neyobytes-whatsapp-agent](https://github.com/hazrid93/neyobytes-whatsapp-agent) A WhatsApp Bot SaaS platform that allows users to create AI-powered WhatsApp bots for business inquiries, customer support, and group management. Comes with smart context management and compression keeping long conversation history optimized for LLM retrieval.
+
+- [neyobytes-jemput](https://github.com/hazrid93/neyobytes-jemput) Jemput is a digital wedding invitation platform built for the Malaysian market. Couples can create beautiful, themed digital wedding cards (kad kahwin) complete with RSVP management, guest book, photo gallery, money gift (Salam Kaut) integration, countdown timer, Google Maps location, background music, and an AI-powered chatbot that answers guest questions about the event
+  
+  
+
+## My Open Projects
+- [discord-rhytm-bot](https://github.com/hazrid93/discord-rhythm-bot)
+- [pi-xiaomi-mimo-provider](https://github.com/hazrid93/pi-xiaomi-mimo-provider)
+- [blackforest-bs20](https://github.com/hazrid93/BlackForest-BSC20)
+- [YearnDeployerAlerterBot](https://github.com/hazrid93/YearnDeployerAlerterBot)
+  
 ## 👨🏻‍🔧 Open Source Contributions
 - [fix: strip tool_calls from assistant messages for GLM models to prevent ZAI/vLLM 400 crash](https://github.com/monotykamary/pi-makora-provider/pull/4)
 - [Barcode scanner enhancement via retry with inset and zoom](https://github.com/gevgasparyan/rn-qr-generator/pull/57)
