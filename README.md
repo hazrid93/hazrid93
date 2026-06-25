@@ -21,16 +21,20 @@
 
 ## 📦 Private Projects
 
+> Source code for these projects is private. Click a project to view its **architecture, sequence, and flow diagrams** hosted here in my profile repo.
+
 <table>
   <tr>
     <td width="50%">
-      <h3><a href="https://github.com/hazrid93/neyobytes-whatsapp-agent">neyobytes-whatsapp-agent</a></h3>
-      <p>WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows.</p>
+      <h3><a href="https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md">neyobytes-whatsapp-agent</a></h3>
+      <p>WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows. Multi-tenant, multi-LLM provider routing, Stripe billing.</p>
+      <p><a href="https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md">📐 View architecture &amp; sequence diagrams →</a></p>
     </td>
     <td width="50%">
-      <h3><a href="https://github.com/hazrid93/neyobytes-jemput">neyobytes-jemput</a></h3>
+      <h3><a href="https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md">neyobytes-jemput</a></h3>
       <h4><a href="https://jemput.neyobytes.com/">Official Website</a></h4>
       <p>Digital wedding invitation platform for the Malaysian market. Couples create beautiful, themed digital invitations.</p>
+      <p><a href="https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md">📐 View architecture &amp; sequence diagrams →</a></p>
     </td>
   </tr>
 </table>
