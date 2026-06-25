@@ -22,12 +22,12 @@ A multi-tenant WhatsApp Bot SaaS platform. Users sign up, create AI-powered What
 flowchart TB
   subgraph Clients
     WA[WhatsApp Users]
-    WEB[Dashboard / Web Chat<br/>Next.js 14]
+    WEB["Dashboard / Web Chat<br/>Next.js 14"]
     ADMIN[Admin Panel]
   end
 
   subgraph Nginx["Nginx reverse proxy"]
-    NX[nginx.conf / nginx-unified.conf]
+    NX["nginx.conf / nginx-unified.conf"]
   end
 
   subgraph App["Node.js + Express 5  (src/app.js)"]
@@ -186,7 +186,7 @@ sequenceDiagram
 flowchart TD
   IN["Incoming message<br/>chatId · content · sender · type"] --> CRM["1. upsert contact in CRM"]
   CRM --> FIRST{"2. first message?"}
-  FIRST -- yes & welcome_enabled --> WELCOME["send welcome_message<br/>(AI may still respond)"]
+  FIRST --|yes and welcome_enabled|--> WELCOME["send welcome_message<br/>(AI may still respond)"]
   FIRST -- no --> HOURS
   WELCOME --> HOURS{"3. business hours enabled?"}
   HOURS -- closed --> OUT["outside_hours_message<br/>stopAI = true → return"]
@@ -196,7 +196,7 @@ flowchart TD
   MENU -- match --> MENURES["send menu body<br/>stopAI = true → return"]
   MENU -- no --> AUTO{"6. auto-reply rule?"}
   AUTO -- match --> AUTORES["send response<br/>stopAI = per-rule"]
-  AUTO -- no & not stopAI --> FAQ{"7. FAQ match?"}
+  AUTO --|no and not stopAI|--> FAQ{"7. FAQ match?"}
   FAQ -- match --> FAQRES["send answer<br/>stopAI = true → return"]
   FAQ -- no --> LINKS{"8. quick-link?"}
   LINKS -- match --> LINKRES["send link<br/>AI may add context"]
@@ -214,7 +214,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-  REQ["chat request<br/>(messages, hasImage?)"] --> CHECK{"_hasImageContent<br/>& model vision-capable?"}
+  REQ["chat request<br/>(messages, hasImage?)"] --> CHECK{"_hasImageContent<br/>and model vision-capable?"}
   CHECK -- yes --> VISION["_delegateToVision<br/>visionProvider endpoint"]
   CHECK -- no --> PRIMARY
   VISION --> PRIMARY
@@ -222,17 +222,17 @@ flowchart LR
   PRIMARY["getApiKey(provider)<br/>getEndpoint(provider)"] --> CALL["POST {endpoint}/chat/completions"]
   CALL --> OK{"200 OK?"}
   OK -- yes --> OUT["return completion"]
-  OK -- error & fallback set --> FB["switch to<br/>fallbackProvider + fallbackModel"]
+  OK --|error and fallback set|--> FB["switch to<br/>fallbackProvider + fallbackModel"]
   FB --> CALL2["POST {fallback endpoint}/chat/completions"]
   CALL2 --> OUT
 
   subgraph Providers["PROVIDER_ENDPOINTS"]
     P1[openrouter]
     P2[openai]
-    P3[ollama — local]
-    P4[zai / bigmodel]
+    P3["ollama — local"]
+    P4["zai / bigmodel"]
     P5[synthetic]
-    P6[firepass / fireworks]
+    P6["firepass / fireworks"]
     P7[crofai]
     P8[waferai]
     P9[neuralwatt]
