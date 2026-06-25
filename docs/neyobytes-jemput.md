@@ -126,7 +126,7 @@ flowchart LR
     R8["/admin/* → AdminPage"]
   end
 
-  AUTHINIT["useAuthStore.initialize()<br/>on mount"] --> CHECK{"user && initialized?"}
+  AUTHINIT["useAuthStore.initialize()<br/>on mount"] --> CHECK{"user and initialized?"}
   CHECK -- no --> LOGIN["Navigate → /login"]
   CHECK -- yes --> RENDER["render children"]
 
@@ -386,7 +386,7 @@ flowchart TB
   SERVER --> SUPACLOUD["Supabase Cloud<br/>Postgres + Auth + RPC"]
   SERVER --> STRIPE["Stripe API"]
   SERVER --> LLMEXT["LLM APIs (OpenAI-compatible)"]
-  VITE -.fetch /api.-> SERVER
+  VITE -->|"fetch /api"| SERVER
   subgraph PM2["ecosystem.config.cjs"]
     SERVER
     VITE
