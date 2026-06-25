@@ -1,6 +1,6 @@
 <h1 align="center">Hi there 👋 I'm Azad</h1>
 <p align="center">
-  <em>Full-stack engineer building AI-powered products end-to-end — backend, frontend, and everything in between.</em>
+  <em>Full-stack engineer · AI tooling, bot platforms, and AI-integrated web apps (backend + frontend)</em>
 </p>
 <p align="center">
   <a href="https://github.com/hazrid93?tab=followers">
