@@ -25,8 +25,8 @@
 
 | Project | Lang | Description | Architecture |
 |---|:---:|---|---|
-| neyobytes-whatsapp-agent | `JS` | WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows. Multi-tenant, multi-LLM provider routing, Stripe billing. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) |
-| neyobytes-jemput | `TS` | Digital wedding invitation platform for the Malaysian market. Couples create beautiful, themed digital invitations. [🌐 Live](https://jemput.neyobytes.com/) | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) |
+| [neyobytes-whatsapp-agent](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) | `JS` | WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows. Multi-tenant, multi-LLM provider routing, Stripe billing. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) |
+| [neyobytes-jemput](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) | `TS` | Digital wedding invitation platform for the Malaysian market. Couples create beautiful, themed digital invitations. [🌐 Live](https://jemput.neyobytes.com/) | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) |
 
 ---
 
