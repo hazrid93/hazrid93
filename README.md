@@ -38,7 +38,7 @@
 | [discord-rhythm-bot](https://github.com/hazrid93/discord-rhythm-bot) | `TS` | Discord audio bot streaming from YouTube & Soundcloud via play-dl. MongoDB-backed user/guild history with priority playlist queue. ⭐ 1 | [📐 Diagrams](https://github.com/hazrid93/discord-rhythm-bot/blob/main/docs/architecture.md) · [DeepWiki](https://deepwiki.com/hazrid93/0xRhythm-Bot) |
 | [pi-xiaomi-mimo-provider](https://github.com/hazrid93/pi-xiaomi-mimo-provider) | `TS` | Pi plugin integrating Xiaomi MiMo models as a provider for the pi coding agent. | [📐 Diagrams](https://github.com/hazrid93/pi-xiaomi-mimo-provider/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-xiaomi-mimo-provider?branch=main) |
 | [BlackForest-BSC20](https://github.com/hazrid93/BlackForest-BSC20) | `Solidity` | BSC-20 token contract for BlackForest on the Binance Smart Chain. | [📐 Diagrams](https://github.com/hazrid93/BlackForest-BSC20/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/BlackForest-BSC20/page/1.1?branch=main) |
-| [YearnDeployerAlerterBot](https://github.com/hazrid93/YearnDeployerAlerterBot) | `Java` | Monitors Yearn deployer activity on Etherscan and auto-posts alerts to Twitter. ⭐ 2 | [📐 Diagrams](https://github.com/hazrid93/YearnDeployerAlerterBot/blob/main/docs/architecture.md) |
+| [YearnDeployerAlerterBot](https://github.com/hazrid93/YearnDeployerAlerterBot) | `Java` | Monitors Yearn deployer activity on Etherscan and auto-posts alerts to Twitter. ⭐ 2 | [📐 Diagrams](https://github.com/hazrid93/YearnDeployerAlerterBot/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/YearnDeployerAlerterBot?branch=main) |
 
 ---
 
