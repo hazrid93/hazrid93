@@ -245,6 +245,149 @@ flowchart LR
 
 ---
 
+## 🧠 Context Management & VCC Compaction
+
+WhatsApp group chats can run for thousands of messages. Sending all of them to the LLM on every turn would blow past context windows and cost a fortune. The platform solves this with a **View-oriented Conversation Compiler (VCC)** — a two-tier compaction system that gives the LLM access to long group conversation history **without bloating the context window**.
+
+### How it works
+
+The system maintains **two views** of every conversation:
+
+| View | Purpose | Injected into LLM? |
+|---|---|---|
+| **Full View** | Lossless, line-numbered transcript — the canonical source for recall | No (stored in DB, retrieved on demand) |
+| **Brief View** | Compact view with `(file:line-range)` pointers back to Full View | Yes — replaces thousands of messages with a few hundred lines |
+
+The LLM context window receives only: **brief view (older messages) + recent N messages (verbatim)**. The full conversation is never lost — the `conversation_recall` tool lets the LLM fetch specific line ranges or search the Full View on demand.
+
+```mermaid
+flowchart TB
+  subgraph Raw["Raw conversation  (Postgres)"]
+    HISTORY["whatsapp_chat_history<br/>every message stored"]
+    CONTEXT["whatsapp_chat_context<br/>all group messages (not just !ai)"]
+  end
+
+  subgraph VCC["VCC Compiler  (src/vcc-compiler.js)"]
+    JSONL["Export to JSONL"]
+    COMPILE["Python VCC compiler<br/>vendor/VCC/skills/conversation-compiler"]
+    FULL["Full View (.txt)<br/>lossless line-numbered transcript"]
+    BRIEF["Brief View (.min.txt)<br/>compact with (file:line) pointers"]
+  end
+
+  subgraph DB["whatsapp_chat_views  (Postgres)"]
+    VIEWS["full_view + brief_view<br/>messages_compiled, compiled_at"]
+  end
+
+  subgraph LLM["LLM context window"]
+    BRIEF_INJ["Brief view as system message<br/>(older messages, compacted)"]
+    RECENT["Recent N messages verbatim<br/>(config.keepRecentMessages)"]
+    RECALL["conversation_recall tool<br/>fetches from full_view on demand"]
+  end
+
+  HISTORY --> JSONL
+  CONTEXT --> JSONL
+  JSONL --> COMPILE
+  COMPILE --> FULL
+  COMPILE --> BRIEF
+  FULL --> VIEWS
+  BRIEF --> VIEWS
+  BRIEF --> BRIEF_INJ
+  RECENT --> RECENT
+  VIEWS -.recall.-> RECALL
+  RECALL --> LLM
+```
+
+### Compaction flow
+
+```mermaid
+sequenceDiagram
+  participant WA as WhatsApp Group
+  participant Client as Bot Client
+  participant DB as Postgres
+  participant VCC as VCC Compiler
+  participant LLM as LLM Service
+
+  WA->>Client: new message in group
+  Client->>DB: saveChatMessage + saveChatContext
+  Client->>LLM: generate response with context
+  LLM->>DB: getChatViews(chatId)
+
+  alt brief_view exists in DB
+    LLM->>DB: getChatHistory(chatId, keepRecentMessages)
+    Note over LLM: Load brief_view (system msg)<br/>+ recent N messages only<br/>Skip loading thousands of older msgs
+  else no brief_view yet
+    LLM->>DB: getChatHistory(chatId, all)
+    Note over LLM: Load all messages (first compaction pending)
+  end
+
+  LLM->>LLM: send to provider: brief + recent + new msg
+  LLM-->>Client: AI reply
+  Client->>WA: send reply
+
+  Note over Client: After reply sent — background compaction
+
+  Client->>DB: getChatMessageCount(chatId)
+  Client->>DB: getChatViews(chatId)
+
+  alt new messages since last compile >= threshold
+    Client->>DB: getChatHistory(chatId, rawCap)
+    Client->>VCC: compileConversation(olderMessages)
+    VCC->>VCC: export to JSONL
+    VCC->>VCC: run Python VCC compiler
+    VCC-->>Client: brief_view + full_view
+    Client->>DB: saveChatViews(full_view, brief_view)
+    Client->>DB: pruneOldMessages(keep only rawCap)
+    Note over Client: Next request loads brief_view + recent only
+  else below threshold
+    Note over Client: Skip — not enough new messages
+  end
+```
+
+### Why this is awesome
+
+**The problem:** A 2000-message group chat would consume the entire context window of most LLMs — leaving no room for the actual response, and costing 100k+ tokens per turn. Naive summarization loses detail permanently.
+
+**The VCC solution:**
+
+1. **Lossless recall** — nothing is ever deleted from the Full View. The LLM can retrieve exact words from message #47 using `conversation_recall` with line references. Older messages are compacted in the Brief View, but the Full View preserves them byte-for-byte.
+
+2. **Brief View with line pointers** — the compact view replaces verbose messages with truncated summaries, but each entry carries a `(file:line-range)` pointer back to the Full View. The LLM sees "user asked about pricing (truncated from #abc.txt:218-226)" and can fetch lines 218-226 if it needs the full text.
+
+3. **DB-driven compaction** — VCC always compiles from **raw DB messages**, never from a previous brief view. This prevents compaction drift: re-compiling always starts from the original source, so the Full View stays canonical.
+
+4. **Background, non-blocking** — compaction runs via `setImmediate` after the reply is sent. The user never waits for compaction; it happens asynchronously.
+
+5. **Triggered by DB freshness, not memory** — the auto-trigger checks how many new raw DB messages exist since the last compile (`rawMessageCount - compiledCount >= threshold`), not the in-memory context length. This is correct because the in-memory history may already be compacted.
+
+6. **In-memory compile cache** — `compileConversation` caches results by SHA-256 hash of the message content + truncation params. If the same messages are compiled again (e.g. rapid messages), the cache returns instantly.
+
+7. **Group context beyond !ai** — `whatsapp_chat_context` stores **all** group messages (not just `!ai` interactions), so the LLM has awareness of the full group conversation, not just the turns where it was invoked.
+
+### Database tables involved
+
+| Table | Purpose |
+|---|---|
+| `whatsapp_chat_history` | Every `!ai` interaction (user + assistant), with images and mentions |
+| `whatsapp_chat_context` | All group messages (not just AI) — for full group awareness |
+| `whatsapp_chat_views` | VCC compiled `full_view` + `brief_view`, `messages_compiled` count |
+| `whatsapp_chat_summaries` | Legacy summaries table (replaced by `chat_views`) |
+| `whatsapp_group_members` | Group participant names for sender attribution |
+| `whatsapp_unlocked_groups` | Groups where the bot is active (AI responds to all messages) |
+
+### Configuration
+
+| Setting | Default | Effect |
+|---|---|---|
+| `summarizationEnabled` | true | Enable VCC compaction |
+| `summarizeAfterMessages` | configurable | Auto-compact threshold (new messages since last compile) |
+| `keepRecentMessages` | configurable | N recent messages kept verbatim in context |
+| `alwayslogMaxMessagesPerChat` | 1000 | Raw DB row cap per chat (hard cap 50000) |
+| `alwayslogContextLimit` | 200 | Group context messages fetched for VCC input |
+
+Manual compaction is also available via the `!compact` command (owner-only), which forces a VCC compilation regardless of the auto-trigger threshold.
+
+---
+
 ## API Surface
 
 `src/api/routes/index.js` mounts everything under `/api`:
