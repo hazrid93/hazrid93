@@ -396,12 +396,6 @@ flowchart TB
 *PM2 runs the Express server (`tsx`) and serves the Vite-built SPA as static files. Nginx terminates TLS, serves the SPA, and proxies `/api/*` to the server. The server talks to Supabase (service-role), Stripe, and LLM providers.*
 
 ---
-
-$(cat /tmp/highlights/neyobytes-jemput.md)
-
-
----
-
 ## Key Features & Highlights
 
 Jemput is a premium Malaysian digital wedding-invitation platform (Express + React + Supabase + Stripe) with a live preview editor, AI guest chatbot, RSVP/guestbook management, and a multi-layered subscription/quota system. The notable aspects below are grounded in the actual source — Postgres RPCs, migration files, the repository seam, and the iframe preview protocol.
