@@ -51,6 +51,7 @@
 | [#57](https://github.com/gevgasparyan/rn-qr-generator/pull/57) | [rn-qr-generator](https://github.com/gevgasparyan/rn-qr-generator) | Barcode scanner enhancement via retry with inset and zoom |
 | [#1599](https://github.com/react-native-share/react-native-share/pull/1599) | [react-native-share](https://github.com/react-native-share/react-native-share) | Add base64 image support under `linkMetadata` for iOS custom sharing icon |
 | [#113](https://github.com/synthetic-lab/octofriend/pull/113) | [octofriend](https://github.com/synthetic-lab/octofriend) | Add `@` file autocomplete suggestions |
+| [#7](https://github.com/vitobotta/streamvault/pull/7) | [streamvault](https://github.com/vitobotta/streamvault) | Make Comet streams work in StreamVault — pad base64 config encoding + parse Comet's real metadata fields (`filename`, `videoSize`, `bingeGroup`) instead of Torrentio's shape |
 
 ---
 
