@@ -47,6 +47,7 @@
 
 | PR | Project | Description |
 |---|---|---|
+| [#1166](https://github.com/Soju06/codex-lb/pull/1166) | [codex-lb](https://github.com/Soju06/codex-lb) | Add GPT-5.6 Responses Lite support — preserve `additional_tools` input items + reconstruct the `x-openai-internal-codex-responses-lite` header when forwarding |
 | [#4](https://github.com/monotykamary/pi-makora-provider/pull/4) | [pi-makora-provider](https://github.com/monotykamary/pi-makora-provider) | Fix: strip `tool_calls` from assistant messages for GLM models to prevent ZAI/vLLM 400 crash |
 | [#57](https://github.com/gevgasparyan/rn-qr-generator/pull/57) | [rn-qr-generator](https://github.com/gevgasparyan/rn-qr-generator) | Barcode scanner enhancement via retry with inset and zoom |
 | [#1599](https://github.com/react-native-share/react-native-share/pull/1599) | [react-native-share](https://github.com/react-native-share/react-native-share) | Add base64 image support under `linkMetadata` for iOS custom sharing icon |
