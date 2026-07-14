@@ -27,6 +27,7 @@
 |---|:---:|---|---|
 | [neyobytes-whatsapp-agent](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) | `JS` | WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows. Multi-tenant, multi-LLM provider routing, Stripe billing. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-whatsapp-agent?branch=main) |
 | [neyobytes-jemput](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) | `TS` | Digital wedding invitation platform for the Malaysian market. Couples create beautiful, themed digital invitations. [🌐 Live](https://jemput.neyobytes.com/) | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-jemput?branch=main) |
+| [neyobytes-auto-invoice](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-auto-invoice.md) | `TS` | AI-assisted Malaysian e-Invoice workflow for SMEs — scan invoices, review official MyInvois fields and code tables, record purchases, and prepare compliant UBL submissions. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-auto-invoice.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-auto-invoice?branch=main) |
 
 ---
 
@@ -34,7 +35,6 @@
 
 | Project | Lang | Description | Architecture |
 |---|:---:|---|---|
-| [neyobytes-auto-invoice](https://github.com/hazrid93/neyobytes-auto-invoice) | `TS` | AI-assisted Malaysian e-Invoice workflow for SMEs — scan invoices, review official MyInvois fields and code tables, record purchases, and prepare compliant UBL submissions. | TOP SECRET :) |
 | [pi-pool-router](https://github.com/hazrid93/pi-pool-router) | `TS` | In-process extension for pi/omp that pools multiple LLM backends behind a single provider — cache-affinity consistent hashing, failover, health checks, and latency-aware routing. | [📐 Diagrams](https://github.com/hazrid93/pi-pool-router/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-pool-router?branch=main) |
 | [discord-rhythm-bot](https://github.com/hazrid93/discord-rhythm-bot) | `TS` | Discord audio bot streaming from YouTube & Soundcloud via play-dl. MongoDB-backed user/guild history with priority playlist queue. ⭐ 1 | [📐 Diagrams](https://github.com/hazrid93/discord-rhythm-bot/blob/main/docs/architecture.md) · [DeepWiki](https://deepwiki.com/hazrid93/0xRhythm-Bot) |
 | [pi-xiaomi-mimo-provider](https://github.com/hazrid93/pi-xiaomi-mimo-provider) | `TS` | Pi plugin integrating Xiaomi MiMo models as a provider for the pi coding agent. | [📐 Diagrams](https://github.com/hazrid93/pi-xiaomi-mimo-provider/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-xiaomi-mimo-provider?branch=main) |
