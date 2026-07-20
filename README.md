@@ -125,8 +125,8 @@
 | [#3962](https://github.com/faker-js/faker/pull/3962) | [faker](https://github.com/faker-js/faker) | Add an optional `{ excludeEmoji?: boolean }` to person.bio: when true, the generated bio is stripped of |
 | [#3963](https://github.com/faker-js/faker/pull/3963) | [faker](https://github.com/faker-js/faker) | Allow the `value` of each entry to be a `() => T` function; when the entry is selected, the function is |
 | [#2449](https://github.com/spf13/cobra/pull/2449) | [cobra](https://github.com/spf13/cobra) | Add GenMarkdownTreeCustomE(cmd, dir, filePrepender, linkHandler, cmdHandler): identical to |
-| [#3964](https://github.com/faker-js/faker/pull/3964) | [faker](https://github.com/faker-js/faker) | Add an optional `{ useAbbreviated?: boolean }` to location.street: when true, common USPS style street |
-| [#3965](https://github.com/faker-js/faker/pull/3965) | [faker](https://github.com/faker-js/faker) | Add an optional `{ weighting?: 'female' | 'male' | 'mixed' }`: when 'mixed' or omitted, behavior is |
+| [#3964](https://github.com/faker-js/faker/pull/3968) | [faker](https://github.com/faker-js/faker) | Add an optional `{ useAbbreviated?: boolean }` to location.street: when true, common USPS style street |
+| [#3965](https://github.com/faker-js/faker/pull/3969) | [faker](https://github.com/faker-js/faker) | Add an optional `{ weighting?: 'female' | 'male' | 'mixed' }`: when 'mixed' or omitted, behavior is |
 | [#3966](https://github.com/faker-js/faker/pull/3966) | [faker](https://github.com/faker-js/faker) | Add an optional `{ sexType?: SexType }`: when omitted, behavior is unchanged (uniform arrayElement). |
 | [#1922](https://github.com/toss/es-toolkit/pull/1922) | [es-toolkit](https://github.com/toss/es-toolkit) | Add isTreeData(value, { childrenKey? |
 | [#1923](https://github.com/toss/es-toolkit/pull/1923) | [es-toolkit](https://github.com/toss/es-toolkit) | Add an optional `{ map?: boolean }` (default false, unchanged behavior): when true, flattenObject returns a |
