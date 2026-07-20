@@ -46,7 +46,7 @@
 
 ---
 
-## 👨🏻‍🔧 Open Source Contributions
+## 👨🏻‍🔧 Open Source Contributions (103)
 
 | PR | Project | Description |
 |---|---|---|
