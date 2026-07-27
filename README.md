@@ -50,6 +50,12 @@
 
 | PR | Project | Description |
 |---|---|---|
+| [#1166](https://github.com/Soju06/codex-lb/pull/1166) | [codex-lb](https://github.com/Soju06/codex-lb) | Add GPT-5.6 Responses Lite support — preserve `additional_tools` input items + reconstruct the `x-openai-internal-codex-responses-lite` header when forwarding |
+| [#4](https://github.com/monotykamary/pi-makora-provider/pull/4) | [pi-makora-provider](https://github.com/monotykamary/pi-makora-provider) | Fix: strip `tool_calls` from assistant messages for GLM models to prevent ZAI/vLLM 400 crash |
+| [#57](https://github.com/gevgasparyan/rn-qr-generator/pull/57) | [rn-qr-generator](https://github.com/gevgasparyan/rn-qr-generator) | Barcode scanner enhancement via retry with inset and zoom |
+| [#1599](https://github.com/react-native-share/react-native-share/pull/1599) | [react-native-share](https://github.com/react-native-share/react-native-share) | Add base64 image support under `linkMetadata` for iOS custom sharing icon |
+| [#113](https://github.com/synthetic-lab/octofriend/pull/113) | [octofriend](https://github.com/synthetic-lab/octofriend) | Add `@` file autocomplete suggestions |
+| [#7](https://github.com/vitobotta/streamvault/pull/7) | [streamvault](https://github.com/vitobotta/streamvault) | Make Comet streams work in StreamVault — pad base64 config encoding + parse Comet's real metadata fields (`filename`, `videoSize`, `bingeGroup`) instead of Torrentio's shape |
 | [#2440](https://github.com/spf13/cobra/pull/2440) | [cobra](https://github.com/spf13/cobra) | Add a way to render Example as a text/template executed against the command, so placeholders like |
 | [#2441](https://github.com/spf13/cobra/pull/2441) | [cobra](https://github.com/spf13/cobra) | Add OnInitializeE which registers func() error functions run after all OnInitialize functions during preRun. |
 | [#2442](https://github.com/spf13/cobra/pull/2442) | [cobra](https://github.com/spf13/cobra) | Add a timeValue pflag.Value implementation that parses/formats a time.Time using a reference layout, plus |
@@ -146,14 +152,7 @@
 | [#5034](https://github.com/callstack/react-native-paper/pull/5034) | [react-native-paper](https://github.com/callstack/react-native-paper) | Add Material 3 Tabs with primary and secondary variants, active indicator, badges, disabled tabs, and scrollable layout |
 | [#5035](https://github.com/callstack/react-native-paper/pull/5035) | [react-native-paper](https://github.com/callstack/react-native-paper) | Add Material 3 calendar date picker with month navigation, full six week grid, min and max disabling, and accessibility labels |
 | [#5036](https://github.com/callstack/react-native-paper/pull/5036) | [react-native-paper](https://github.com/callstack/react-native-paper) | Add Material 3 time picker with hour and minute steppers, AM/PM toggle for 12 hour mode, wrap around, and optional minute step |
-| [#4252](https://github.com/date-fns/date-fns/pull/4252) | [date-fns](https://github.com/date-fns/date-fns) | Add a style option to formatDuration with long, narrow, and short unit label styles plus a per unit formatter map, keeping default output unchanged |
-| [#1166](https://github.com/Soju06/codex-lb/pull/1166) | [codex-lb](https://github.com/Soju06/codex-lb) | Add GPT-5.6 Responses Lite support — preserve `additional_tools` input items + reconstruct the `x-openai-internal-codex-responses-lite` header when forwarding |
-| [#4](https://github.com/monotykamary/pi-makora-provider/pull/4) | [pi-makora-provider](https://github.com/monotykamary/pi-makora-provider) | Fix: strip `tool_calls` from assistant messages for GLM models to prevent ZAI/vLLM 400 crash |
-| [#57](https://github.com/gevgasparyan/rn-qr-generator/pull/57) | [rn-qr-generator](https://github.com/gevgasparyan/rn-qr-generator) | Barcode scanner enhancement via retry with inset and zoom |
-| [#1599](https://github.com/react-native-share/react-native-share/pull/1599) | [react-native-share](https://github.com/react-native-share/react-native-share) | Add base64 image support under `linkMetadata` for iOS custom sharing icon |
-| [#113](https://github.com/synthetic-lab/octofriend/pull/113) | [octofriend](https://github.com/synthetic-lab/octofriend) | Add `@` file autocomplete suggestions |
-| [#7](https://github.com/vitobotta/streamvault/pull/7) | [streamvault](https://github.com/vitobotta/streamvault) | Make Comet streams work in StreamVault — pad base64 config encoding + parse Comet's real metadata fields (`filename`, `videoSize`, `bingeGroup`) instead of Torrentio's shape |
-
+| [#4252](https://github.com/date-fns/date-fns/pull/4252) | [date-fns](https://github.com/date-fns/date-fns) | Add a style option to formatDuration with long, narrow, and short unit label styles plus a per unit formatter map, keeping default output |
 ---
 
 ## 📫 Connect With Me
