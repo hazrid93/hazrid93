@@ -46,7 +46,7 @@
 
 ---
 
-## 👨🏻‍🔧 Open Source Contributions (103)
+## 👨🏻‍🔧 Open Source Contributions (91)
 
 | PR | Project | Description |
 |---|---|---|
@@ -99,18 +99,6 @@
 | [#496](https://github.com/sodiray/radash/pull/496) | [radash](https://github.com/sodiray/radash) | Add shakeDeep(obj, filter=x => x===undefined) that recursively removes unwanted values from an object and |
 | [#497](https://github.com/sodiray/radash/pull/497) | [radash](https://github.com/sodiray/radash) | Add collect(array, fn): a map+filter combo that maps array through fn and keeps only results that are not |
 | [#498](https://github.com/sodiray/radash/pull/498) | [radash](https://github.com/sodiray/radash) | Add an onRetry?: (info: { count; error }) => void option that is invoked on each failed attempt (with the 1 |
-| [#362](https://github.com/unjs/ufo/pull/362) | [ufo](https://github.com/unjs/ufo) | Add withPathParameters(input, params, options?) that substitutes placeholders matched by |
-| [#363](https://github.com/unjs/ufo/pull/363) | [ufo](https://github.com/unjs/ufo) | Add withoutQuery(input) that removes the `?...` query section, preserving the rest of the URL including any |
-| [#199](https://github.com/unjs/ohash/pull/199) | [ohash](https://github.com/unjs/ohash) | Add sha256(data): the SHA 256 hex digest (node:crypto createHash, lowercase hex), the hex variant of the |
-| [#186](https://github.com/unjs/defu/pull/186) | [defu](https://github.com/unjs/defu) | Add an `allowNullish` option to createDefu: `createDefu(merger?, { allowNullish: true })` produces a defu |
-| [#176](https://github.com/unjs/destr/pull/176) | [destr](https://github.com/unjs/destr) | Add a `strictBigInt` option to Options: when true, a bare integer string beyond Number.MAX_SAFE_INTEGER (e.g. |
-| [#260](https://github.com/unjs/citty/pull/260) | [citty](https://github.com/unjs/citty) | Add a `validator?: (value, arg) => boolean | string` to the arg definition: after citty parses and type |
-| [#261](https://github.com/unjs/citty/pull/261) | [citty](https://github.com/unjs/citty) | Add a "number" ArgType: citty parses the value with Number(), throws a CLIError (EARG) when it is NaN, and |
-| [#252](https://github.com/unjs/pathe/pull/252) | [pathe](https://github.com/unjs/pathe) | Add safeName(name): strips illegal characters (< >: " / \ | ? |
-| [#177](https://github.com/unjs/destr/pull/177) | [destr](https://github.com/unjs/destr) | Add a `reviver?: (key, value) => any` option modeled on JSON.parse's reviver, applied bottom up to the |
-| [#187](https://github.com/unjs/defu/pull/187) | [defu](https://github.com/unjs/defu) | Add a `warnDuplicates` option to createDefu: when true, defu logs a console.warn for each base property |
-| [#188](https://github.com/unjs/defu/pull/188) | [defu](https://github.com/unjs/defu) | defu merges string keyed properties but silently ignores Symbol keys (Object.keys omits them), so symbol |
-| [#262](https://github.com/unjs/citty/pull/262) | [citty](https://github.com/unjs/citty) | Add a "multiPositional" ArgType that collects all remaining positional arguments into a string[]. |
 | [#1916](https://github.com/toss/es-toolkit/pull/1916) | [es-toolkit](https://github.com/toss/es-toolkit) | Add deepFreeze(obj) that recursively Object.freezes every nested object/array so no property (including |
 | [#1917](https://github.com/toss/es-toolkit/pull/1917) | [es-toolkit](https://github.com/toss/es-toolkit) | Add chain(...iterables): a lazy generator that yields every element of every iterable, in order, without an |
 | [#1918](https://github.com/toss/es-toolkit/pull/1918) | [es-toolkit](https://github.com/toss/es-toolkit) | Add firstValue(iterable) that pulls a single value via the iterator protocol |
