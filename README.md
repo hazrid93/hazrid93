@@ -23,11 +23,11 @@
 
 > Source code for these projects is private. Architecture diagrams are hosted here in my profile repo so visitors can explore the design without repo access.
 
-| Project | Lang | Description | Architecture |
-|---|:---:|---|---|
-| [neyobytes-whatsapp-agent](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) | `JS` | WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows. Multi-tenant, multi-LLM provider routing, Stripe billing. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-whatsapp-agent?branch=main) |
-| [neyobytes-jemput](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) | `TS` | Digital wedding invitation platform for the Malaysian market. Couples create beautiful, themed digital invitations. [🌐 Live](https://jemput.neyobytes.com/) | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-jemput?branch=main) |
-| [neyobytes-auto-invoice](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-auto-invoice.md) | `TS` | AI-assisted Malaysian e-Invoice workflow for SMEs — scan invoices, review official MyInvois fields and code tables, record purchases, and prepare compliant UBL submissions. | TOP SECRET :) |
+| Project | Live | Lang | Description | Architecture |
+|---|:---:|:---:|---|---|
+| [neyobytes-whatsapp-agent](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) | — | `JS` | WhatsApp Bot SaaS platform for creating AI-powered WhatsApp bots — business inquiries, customer support, and automated workflows. Multi-tenant, multi-LLM provider routing, Stripe billing. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-whatsapp-agent.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-whatsapp-agent?branch=main) |
+| [neyobytes-jemput](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) | [🌐 Live](https://jemput.neyobytes.com/) | `TS` | Digital wedding invitation platform for the Malaysian market. Couples create beautiful, themed digital invitations. | [📐 Diagrams](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-jemput.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/neyobytes-jemput?branch=main) |
+| [neyobytes-auto-invoice](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-auto-invoice.md) | [🌐 Live](https://autoinvoice.neyobytes.com/) | `TS` | An ongoing, private e-Invoice project for Malaysian SMEs. Most details are confidential. | [🔒 Limited overview](https://github.com/hazrid93/hazrid93/blob/main/docs/neyobytes-auto-invoice.md) |
 
 ---
 
