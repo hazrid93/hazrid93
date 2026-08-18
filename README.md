@@ -19,6 +19,18 @@
 
 ---
 
+## 🏆 Open-Source Recognition
+
+### Concept Contributor — [pi-fabric](https://github.com/monotykamary/pi-fabric)
+
+Acknowledged by the project maintainer for proposing a **token-efficient LLM advisor pattern** that led to Fabric's advisor capability.
+
+> “Thanks to [@hazrid93](https://github.com/hazrid93), whose request for a token-efficient LLM advisor pattern led to Fabric's advisor.”
+
+[View the official acknowledgment →](https://github.com/monotykamary/pi-fabric#acknowledgments)
+
+---
+
 ## 📦 Private Projects
 
 > Source code for these projects is private. Architecture diagrams are hosted here in my profile repo so visitors can explore the design without repo access.
