@@ -33,11 +33,9 @@
 
 ## 🌐 Open Projects
 
-> 🏆 **Concept Contributor — [pi-fabric](https://github.com/monotykamary/pi-fabric)**<br>
-> Acknowledged by the project maintainer for proposing a **token-efficient LLM advisor pattern** that led to Fabric's advisor capability. [View the official acknowledgment →](https://github.com/monotykamary/pi-fabric#acknowledgments)
-
 | Project | Lang | Description | Architecture |
 |---|:---:|---|---|
+| [pi-fabric](https://github.com/monotykamary/pi-fabric) | `TS` | **Concept contributor** — acknowledged for proposing the token-efficient LLM advisor pattern that led to Fabric's advisor capability. Currently among the **top 10 most-downloaded Pi extensions** in the [Pi package catalog](https://pi.dev/packages). | [🏆 Acknowledgment](https://github.com/monotykamary/pi-fabric#acknowledgments) · [![npm downloads](https://img.shields.io/npm/dm/pi-fabric?style=flat-square&label=npm%20downloads)](https://www.npmjs.com/package/pi-fabric) |
 | [pi-fabric-role-router](https://github.com/hazrid93/pi-fabric-role-router) | `TS` | Community Pi extension adding centralized role-based model, thinking, and tool routing to [Pi Fabric](https://github.com/monotykamary/pi-fabric), with `roles.run()` and `roles.spawn()` dispatch. | [README](https://github.com/hazrid93/pi-fabric-role-router#readme) |
 | [pi-pool-router](https://github.com/hazrid93/pi-pool-router) | `TS` | In-process extension for pi/omp that pools multiple LLM backends behind a single provider — cache-affinity consistent hashing, failover, health checks, and latency-aware routing. | [📐 Diagrams](https://github.com/hazrid93/pi-pool-router/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-pool-router?branch=main) |
 | [discord-rhythm-bot](https://github.com/hazrid93/discord-rhythm-bot) | `TS` | Discord audio bot streaming from YouTube & Soundcloud via play-dl. MongoDB-backed user/guild history with priority playlist queue. ⭐ 1 | [📐 Diagrams](https://github.com/hazrid93/discord-rhythm-bot/blob/main/docs/architecture.md) · [DeepWiki](https://deepwiki.com/hazrid93/0xRhythm-Bot) |
