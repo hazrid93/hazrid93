@@ -19,6 +19,18 @@
 
 ---
 
+## 📦 Published npm Packages
+
+> All packages under npm org/user [`hazrid1993`](https://www.npmjs.com/~hazrid1993) — download counts are live badges from npm.
+
+| Package | Version | Downloads | Install |
+|---|:---:|:---:|---|
+| [pi-fabric-role-router](https://www.npmjs.com/package/pi-fabric-role-router) | ![npm version](https://img.shields.io/npm/v/pi-fabric-role-router?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/pi-fabric-role-router?style=flat-square&label=npm%20downloads) | `pi install npm:pi-fabric-role-router` |
+| [@hazrid1993/pi-advisor](https://www.npmjs.com/package/@hazrid1993/pi-advisor) | ![npm version](https://img.shields.io/npm/v/@hazrid1993/pi-advisor?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/@hazrid1993/pi-advisor?style=flat-square&label=npm%20downloads) | `pi install npm:@hazrid1993/pi-advisor` |
+| [@hazrid1993/pi-vision-handoff](https://www.npmjs.com/package/@hazrid1993/pi-vision-handoff) | ![npm version](https://img.shields.io/npm/v/@hazrid1993/pi-vision-handoff?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/@hazrid1993/pi-vision-handoff?style=flat-square&label=npm%20downloads) | `omp install github:hazrid93/omp-vision-handoff` |
+
+---
+
 ## 📦 Private Projects
 
 > Source code for these projects is private. Architecture diagrams are hosted here in my profile repo so visitors can explore the design without repo access.
@@ -36,12 +48,12 @@
 | Project | Lang | Description | Architecture |
 |---|:---:|---|---|
 | [pi-fabric](https://github.com/monotykamary/pi-fabric) | `TS` | **Concept contributor** — acknowledged for proposing the token-efficient LLM advisor pattern that led to Fabric's advisor capability. Currently among the **top 10 most-downloaded Pi extensions** in the [Pi package catalog](https://pi.dev/packages). | [🏆 Acknowledgment](https://github.com/monotykamary/pi-fabric#acknowledgments) · [![npm downloads](https://img.shields.io/npm/dm/pi-fabric?style=flat-square&label=npm%20downloads)](https://www.npmjs.com/package/pi-fabric) |
-| [pi-fabric-role-router](https://github.com/hazrid93/pi-fabric-role-router) | `TS` | Community Pi extension adding centralized role-based model, thinking, and tool routing to [Pi Fabric](https://github.com/monotykamary/pi-fabric), with `roles.run()` and `roles.spawn()` dispatch. | [README](https://github.com/hazrid93/pi-fabric-role-router#readme) |
+| [pi-fabric-role-router](https://github.com/hazrid93/pi-fabric-role-router) | `TS` | Community Pi extension adding centralized role-based model, thinking, and tool routing to [Pi Fabric](https://github.com/monotykamary/pi-fabric), with `roles.run()` and `roles.spawn()` dispatch. | [📐 Diagrams](https://github.com/hazrid93/pi-fabric-role-router/blob/main/docs/architecture.md) · [README](https://github.com/hazrid93/pi-fabric-role-router#readme) · [![npm downloads](https://img.shields.io/npm/dm/pi-fabric-role-router?style=flat-square&label=npm%20downloads)](https://www.npmjs.com/package/pi-fabric-role-router) |
 | [pi-pool-router](https://github.com/hazrid93/pi-pool-router) | `TS` | In-process extension for pi/omp that pools multiple LLM backends behind a single provider — cache-affinity consistent hashing, failover, health checks, and latency-aware routing. | [📐 Diagrams](https://github.com/hazrid93/pi-pool-router/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-pool-router?branch=main) |
 | [discord-rhythm-bot](https://github.com/hazrid93/discord-rhythm-bot) | `TS` | Discord audio bot streaming from YouTube & Soundcloud via play-dl. MongoDB-backed user/guild history with priority playlist queue. ⭐ 1 | [📐 Diagrams](https://github.com/hazrid93/discord-rhythm-bot/blob/main/docs/architecture.md) · [DeepWiki](https://deepwiki.com/hazrid93/0xRhythm-Bot) |
 | [pi-xiaomi-mimo-provider](https://github.com/hazrid93/pi-xiaomi-mimo-provider) | `TS` | Pi plugin integrating Xiaomi MiMo models as a provider for the pi coding agent. | [📐 Diagrams](https://github.com/hazrid93/pi-xiaomi-mimo-provider/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/pi-xiaomi-mimo-provider?branch=main) |
 | [pi-advisor](https://github.com/hazrid93/pi-advisor) | `TS` | Pi extension that attaches a second model as an advisor — it peer-reviews every turn of the main agent, explores the workspace with a read-only toolset, and injects `<advisory>` notes (nit / concern / blocker). Ports the advisor logic from `can1357/oh-my-pi` to stock pi. | [📐 Diagrams](https://github.com/hazrid93/pi-advisor/blob/main/docs/architecture.md) · [DeepWiki](https://deepwiki.com/hazrid93/pi-advisor) |
-| [pi-vision-handoff](https://github.com/hazrid93/pi-vision-handoff) | `TS` | omp & pi code compatible fork of pi-vision-handoff — gives text-only models vision by proxying image input through a vision-capable model. Fixed omp runtime API mismatches (`getApiKeyAndHeaders` → `getApiKey`, broken `/compat` import). | [INSTALL.md](https://github.com/hazrid93/omp-vision-handoff/blob/main/INSTALL.md) |
+| [pi-vision-handoff](https://github.com/hazrid93/pi-vision-handoff) | `TS` | omp & pi code compatible fork of pi-vision-handoff — gives text-only models vision by proxying image input through a vision-capable model. Fixed omp runtime API mismatches (`getApiKeyAndHeaders` → `getApiKey`, broken `/compat` import). | [📐 Diagrams](https://github.com/hazrid93/omp-vision-handoff/blob/main/INSTALL.md#diagrams) · [INSTALL.md](https://github.com/hazrid93/omp-vision-handoff/blob/main/INSTALL.md) |
 | [BlackForest-BSC20](https://github.com/hazrid93/BlackForest-BSC20) | `Solidity` | BSC-20 token contract for BlackForest on the Binance Smart Chain. | [📐 Diagrams](https://github.com/hazrid93/BlackForest-BSC20/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/BlackForest-BSC20/page/1.1?branch=main) |
 | [YearnDeployerAlerterBot](https://github.com/hazrid93/YearnDeployerAlerterBot) | `Java` | Monitors Yearn deployer activity on Etherscan and auto-posts alerts to Twitter. ⭐ 2 | [📐 Diagrams](https://github.com/hazrid93/YearnDeployerAlerterBot/blob/main/docs/architecture.md) · [DeepWiki](https://app.devin.ai/org/isaiya-9bf81eafd4d3/wiki/hazrid93/YearnDeployerAlerterBot?branch=main) |
 
