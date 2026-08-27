@@ -27,7 +27,7 @@
 |---|:---:|:---:|---|
 | [pi-fabric-role-router](https://www.npmjs.com/package/pi-fabric-role-router) | ![npm version](https://img.shields.io/npm/v/pi-fabric-role-router?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/pi-fabric-role-router?style=flat-square&label=npm%20downloads) | `pi install npm:pi-fabric-role-router` |
 | [@hazrid1993/pi-advisor](https://www.npmjs.com/package/@hazrid1993/pi-advisor) | ![npm version](https://img.shields.io/npm/v/@hazrid1993/pi-advisor?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/@hazrid1993/pi-advisor?style=flat-square&label=npm%20downloads) | `pi install npm:@hazrid1993/pi-advisor` |
-| [@hazrid1993/pi-vision-handoff](https://www.npmjs.com/package/@hazrid1993/pi-vision-handoff) | ![npm version](https://img.shields.io/npm/v/@hazrid1993/pi-vision-handoff?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/@hazrid1993/pi-vision-handoff?style=flat-square&label=npm%20downloads) | `omp install github:hazrid93/omp-vision-handoff` |
+| [@hazrid1993/pi-vision-handoff](https://www.npmjs.com/package/@hazrid1993/pi-vision-handoff) | ![npm version](https://img.shields.io/npm/v/@hazrid1993/pi-vision-handoff?style=flat-square) | ![npm downloads](https://img.shields.io/npm/dm/@hazrid1993/pi-vision-handoff?style=flat-square&label=npm%20downloads) | `omp plugin install npm:@hazrid1993/pi-vision-handoff` |
 
 ---
 
